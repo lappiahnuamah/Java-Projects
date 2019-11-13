@@ -1,19 +1,18 @@
-package grading_system;
+package getter;
 import java.util.Scanner;
 
 public class Factorial {
+
+	public static void main(String[] args) {
+		Scanner input = new Scanner(System.in);
+		int n, fact=1;
 	
-  public static void main(String[] args) {
-	  int num=1, fact;
-	  Scanner input = new Scanner(System.in);
-	  System.out.println("Enter a number: ");
-	  fact = input.nextInt();
-	  
-	  while(fact != 0) {
-			  num = num * fact;
-			  fact--;
-	  }
-	 
-System.out.println("The facotrial of the number is " + num);
-  }
+		System.out.println("Please input the number:");
+		n = input.nextInt();
+		for(int i=1; i<=n;i++) {
+			fact = fact *i;
+		}
+		System.out.println("The factorial of " + n +" is "+ fact);
+	}
+
 }
